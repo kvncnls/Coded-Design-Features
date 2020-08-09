@@ -1,0 +1,174 @@
+/* Global Styles */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --main-font: sans-serif;
+  --body-font: "Inter", sans-serif;
+  --main-color: #262626;
+  --secondary-color: #f2f2f2;
+  --tertiary-color: #c0c0c0;
+  /* MacOS Colors: */
+  --macRed: #ff5f58;
+  --macYellow: #ffbe2f;
+  --macGreen: #2ac940;
+  --macBackground: #ececec;
+}
+
+html {
+  font-family: var(--body-font);
+  font-size: 10px;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--macBackground);
+}
+
+.macBar {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  display: flex;
+  height: 50px;
+}
+
+.macBtn {
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin-right: 6px;
+}
+
+.macRed {
+  background-color: var(--macRed);
+}
+.macYellow {
+  background-color: var(--macYellow);
+}
+.macGreen {
+  background-color: var(--macGreen);
+}
+
+.container {
+  width: 85%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--tertiary-color);
+  border-radius: 10px;
+  background-color: var(--secondary-color);
+  margin: 10px;
+}
+
+.sub-container {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-container h2 {
+  margin: 5px;
+}
+
+.text-container {
+  width: 300px;
+  margin: 10px 100px 10px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  transition-duration: 150ms;
+}
+
+/* "Pushed In" */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  width: auto;
+  height: 42px;
+  border-radius: 22px;
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0px -1px 2px rgba(0, 0, 0, 0.15),
+    inset 0px 1px 2px rgba(255, 255, 255, 1);
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+
+.btn:hover {
+  transform-origin: center;
+  transform: scale(0.925);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15),
+    inset 0px -1px 2px rgba(0, 0, 0, 0.1),
+    inset 0px 1px 2px rgba(255, 255, 255, 1);
+}
+
+/* We don't actually want the text to get too small,
+so we'll limit it to 0.925. */
+.btn:hover > .text {
+  transform: scaleX(0.925) scaleY(0.925);
+}
+
+.text {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  line-height: 19px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Enlarge  */
+.btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  width: auto;
+  height: 42px;
+  border-radius: 22px;
+  background: var(--secondary-color);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15),
+    inset 0px -1px 2px rgba(0, 0, 0, 0.15),
+    inset 0px 1px 2px rgba(255, 255, 255, 1);
+  transform-origin: center;
+  transition-duration: 100ms;
+}
+
+.btn2:hover {
+  transform-origin: center;
+  transform: scale(1.075);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15),
+    inset 0px -1px 2px rgba(0, 0, 0, 0.15),
+    inset 0px 1px 2px rgba(255, 255, 255, 1);
+}
+
+.btn2:hover > .text {
+  transform: scale(1.075);
+}

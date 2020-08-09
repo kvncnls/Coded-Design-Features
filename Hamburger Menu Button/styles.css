@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: lightblue;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ############################## */
+/* DEFAULT ICON STARTS HERE */
+/* ############################## */
+
+/* Div Icon */
+.menu-icon {
+  width: 48px;
+  height: 48px;
+  position: relative;
+
+  /* Changes cursor into a pointer finger on hover */
+  cursor: pointer;
+
+  /* Hides overflow scrolling behavior */
+  overflow: hidden;
+  margin: auto;
+}
+
+.menu-icon div {
+  position: absolute;
+  height: 12px;
+  width: 48px;
+  background: darkblue;
+  border-radius: 8px;
+  /* Causes ALL <div> tags to have an ease-in-out transition over 100ms. */
+  transition: 100ms ease-in-out all;
+  margin: auto;
+}
+
+/* Default Position of Div Elements */
+
+/* First <div>, top bar */
+.menu-icon div:nth-child(1) {
+  top: 0px;
+}
+/* Second <div>, middle bar */
+.menu-icon div:nth-child(2) {
+  top: 18px;
+}
+/* Third <div>, bottom bar */
+.menu-icon div:nth-child(3) {
+  top: 36px;
+}
+
+/* Open Position of Div Elements */
+
+.menu-icon.open-position div:nth-child(1) {
+  /* Here we are moving the top bar 9px 
+    and rotating it 45deg.*/
+  transform: rotate(45deg);
+  top: 18px;
+}
+.menu-icon.open-position div:nth-child(2) {
+  /* Middle bar disappears with 0 opacity,
+    also, it rotates 45 degrees, conforming with the top bar. */
+  transform: rotate(45deg);
+  opacity: 0;
+}
+.menu-icon.open-position div:nth-child(3) {
+  /* Here we are moving the bottom bar 9px
+    We are also rotating it -45deg, 
+    the opposite of the top bar */
+  transform: rotate(-45deg);
+  top: 18px;
+}
+
+/* ############################## */
+/* 2ND ICON STARTS HERE */
+/* ############################## */
+
+/* Div Icon2 */
+.menu-icon2 {
+  width: 64px;
+  height: 64px;
+  position: relative;
+  /*   background-color: indianred; */
+
+  /* Changes cursor into a pointer finger on hover */
+  cursor: pointer;
+
+  /* Hides overflow scrolling behavior */
+  overflow: hidden;
+  margin: auto;
+}
+
+.menu-icon2 div {
+  position: relative;
+  height: 12px;
+  width: 48px;
+  background: maroon;
+  border-radius: 8px;
+  /* Causes ALL <div> tags to have an ease-in-out transition over 100ms. */
+  transition: 100ms ease-in-out all;
+  margin: auto;
+}
+
+/* Default Position of Div Elements */
+
+/* First <div>, top bar */
+.menu-icon2 div:nth-child(1) {
+  top: 10px;
+}
+/* Second <div>, middle bar */
+.menu-icon2 div:nth-child(2) {
+  top: 14px;
+}
+/* Third <div>, bottom bar */
+.menu-icon2 div:nth-child(3) {
+  top: 18px;
+}
+
+/* Open Position of Div Elements */
+
+.menu-icon2.open-position2 div:nth-child(1) {
+  /* Here we are moving the top bar 9px 
+    and rotating it 45deg.*/
+  transform: rotate(35deg);
+  top: 16px;
+}
+.menu-icon2.open-position2 div:nth-child(2) {
+  /* Middle bar disappears with 0 opacity,
+    rotates 35 degrees, and moves to the same position 
+    as the top bar, merging with the top bar. */
+  transform: rotate(35deg);
+  top: 16px;
+  opacity: 0;
+}
+.menu-icon2.open-position2 div:nth-child(3) {
+  /* Here we are moving the bottom bar 6px from original posistion,
+    We are also rotating it 35deg, 
+    the same as the top bar */
+  transform: rotate(35deg);
+  top: 12px;
+}
+
+/* ############################## */
+/* 3RD ICON STARTS HERE */
+/* ############################## */
+
+/* Div Icon3 */
+.menu-icon3 {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  /* Changes cursor into a pointer finger on hover */
+  cursor: pointer;
+
+  /* Hides overflow scrolling behavior */
+  overflow: hidden;
+  margin: auto;
+}
+
+.menu-icon3 div {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  background: darkgreen;
+  border-radius: 5px;
+  /* Causes ALL <div> tags to have an ease-in-out transition over 100ms. */
+  transition: 100ms ease-in-out all;
+  margin: auto;
+}
+
+/* Default Position of Div Elements */
+
+/* First <div>, top bar */
+.menu-icon3 div:nth-child(1) {
+  top: 0px;
+}
+/* Second <div>, middle bar */
+.menu-icon3 div:nth-child(2) {
+  top: 9px;
+}
+/* Third <div>, bottom bar */
+.menu-icon3 div:nth-child(3) {
+  top: 18px;
+}
+
+/* Open Position of Div Elements */
+
+.menu-icon3.open-position3 div:nth-child(1) {
+  transform: translateX(-19px) translateY(19px);
+}
+
+.menu-icon3.open-position3 div:nth-child(3) {
+  transform: translateX(19px) translateY(-19px);
+}
