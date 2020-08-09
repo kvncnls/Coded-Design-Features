@@ -22,24 +22,24 @@ body {
   width: 48px;
   height: 48px;
   position: relative;
+  margin: auto;
 
   /* Changes cursor into a pointer finger on hover */
   cursor: pointer;
 
   /* Hides overflow scrolling behavior */
   overflow: hidden;
-  margin: auto;
 }
 
 .menu-icon div {
   position: absolute;
+  margin: auto;
   height: 12px;
   width: 48px;
   background: lightblue;
   border-radius: 8px;
   /* Causes ALL <div> tags to have an ease-in-out transition over 100ms. */
   transition: 100ms ease-in-out all;
-  margin: auto;
 }
 
 /* Default Position of Div Elements */
@@ -67,14 +67,14 @@ body {
 }
 .menu-icon.open-position div:nth-child(2) {
   /* Middle bar disappears with 0 opacity,
-    also, it rotates 45 degrees, conforming with the top bar. */
+    rotates 45 degrees, conforming with the top bar. */
   transform: rotate(45deg);
   opacity: 0;
 }
 .menu-icon.open-position div:nth-child(3) {
   /* Here we are moving the bottom bar 9px
     We are also rotating it -45deg, 
-    the opposite of the top bar */
+    the opposite of the top bar, creating the "X". */
   transform: rotate(-45deg);
   top: 18px;
 }
@@ -88,25 +88,24 @@ body {
   width: 64px;
   height: 64px;
   position: relative;
-  /*   background-color: indianred; */
+  margin: auto;
 
   /* Changes cursor into a pointer finger on hover */
   cursor: pointer;
 
   /* Hides overflow scrolling behavior */
   overflow: hidden;
-  margin: auto;
 }
 
 .menu-icon2 div {
   position: relative;
+  margin: auto;
   height: 12px;
   width: 48px;
   background: lightcoral;
   border-radius: 8px;
   /* Causes ALL <div> tags to have an ease-in-out transition over 100ms. */
   transition: 100ms ease-in-out all;
-  margin: auto;
 }
 
 /* Default Position of Div Elements */
@@ -157,23 +156,23 @@ body {
   width: 48px;
   height: 48px;
   position: relative;
+  margin: auto;
   /* Changes cursor into a pointer finger on hover */
   cursor: pointer;
 
   /* Hides overflow scrolling behavior */
   overflow: hidden;
-  margin: auto;
 }
 
 .menu-icon3 div {
   position: relative;
+  margin: auto;
   height: 10px;
   width: 10px;
   background: lightgreen;
   border-radius: 5px;
   /* Causes ALL <div> tags to have an ease-in-out transition over 100ms. */
   transition: 100ms ease-in-out all;
-  margin: auto;
 }
 
 /* Default Position of Div Elements */
